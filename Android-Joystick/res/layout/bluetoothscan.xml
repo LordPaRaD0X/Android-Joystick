@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:weightSum="1">
+
+    <!-- <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" >-->
+    
+    	<Button
+        	android:id="@+id/title_paired_devices"
+       	 	android:layout_width="fill_parent"
+        	android:layout_height="60dp"
+       	 	android:background="#2695CE"
+        	android:textColor="#FFFFFF"
+        	android:textSize="20sp"
+        	android:text="Available Devices"
+        	android:textStyle="normal"
+        	android:gravity="fill_vertical"
+        	android:drawableLeft="@drawable/bluetooth"/>
+    <!-- </LinearLayout>-->	
+
+    <ListView
+        android:id="@+id/paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:stackFromBottom="false"
+        android:layout_weight="1" 
+        />
+
+     <Button
+        android:id="@+id/button_scan"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="Scan for more devices"
+        android:textColor="@color/white"
+        android:background="#2695CE"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:layout_weight="2"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+                
+
+</LinearLayout>
